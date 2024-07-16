@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fyle Internship Assignment</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="none,noarchive" />
+  </head>
+
+  <body>
+    <div>
+      <div>
+        <div
+          class="container-sm pt-5 d-flex flex-row px-5 pb-5 justify-content-between bg-white"
+          id="homeScreen"
+        >
+          <div class="d-flex flex-column justify-content-center">
+            <p class="title-text">AWARD WINNING</p>
+            <h1>DIGITAL MARKETING AGENCY</h1>
+            <p class="description-text mt-4">
+              Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+              Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed
+              lacus nec risus finibus feugiat et fermentum
+            </p>
+            <button
+              type="button"
+              id="contactUsBtnEl"
+              class="mt-4 contact-us-btn"
+              data-toggle="modal"
+              data-target="#exampleModal"
+            >
+              CONTACT US
+            </button>
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content p-5">
+                  <div>
+                    <h5
+                      class="modal-title pop-up-heading"
+                      id="exampleModalLabel"
+                    >
+                      Talk to us
+                    </h5>
+                  </div>
+                  <div>
+                    <form
+                      id="myForm"
+                      method="POST"
+                      action="https://getform.io/f/alljypya"
+                      enctype="multipart/form-data"
+                    >
+                      <div class="mt-4">
+                        <input
+                          type="email"
+                          name="email"
+                          class="form-control border-none"
+                          placeholder="Work email*"
+                          id="email"
+                          required
+                        />
+                      </div>
+                      <div class="mt-4 d-flex flex-row">
+                        <div class="mr-2">
+                          <input
+                            type="text"
+                            name="firstName"
+                            placeholder="First name*"
+                            class="form-control border-none"
+                            id="firstNam"
+                            required
+                          />
+                        </div>
+                        <div class="ml-2">
+                          <input
+                            type="text"
+                            name="lastName"
+                            placeholder="Last name*"
+                            class="form-control border-none"
+                            id="lastName"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="mt-5 d-flex flex-row">
+                        <input
+                          type="hidden"
+                          name="Terms-&-Conditions"
+                          value="no"
+                        />
+
+                        <input
+                          type="checkbox"
+                          name="Terms-&-Conditions"
+                          value="yes"
+                          class="checkbox-desing"
+                          id="checkBoxInput"
+                          required
+                        />
+
+                        <label for="checkBoxInput" class="checkbox-text-style">
+                          I agree to Fyle's terms and conditions, and provide
+                          consent to send me communication.
+                        </label>
+                      </div>
+                      <div class="mt-4">
+                        <button
+                          class="form-btn-style"
+                          id="contactUsBtn"
+                          type="submit"
+                        >
+                          Contact Us
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-img">
+            <img src="/Assets/hero.png" class="home-section-img" />
+          </div>
+        </div>
+
+        <div id="WWDSection" class="py-5">
+          <div class="container-sm px-5 py-5">
+            <div class="d-flex flex-row justify-content-center">
+              <div class="d-flex flex-column">
+                <p class="title-text fs-4">WHAT WE DO</p>
+                <div class="d-flex flex-row justify-content-between">
+                  <h1 class="digital-marketing-heading h-size">
+                    SERVICES PROVIDE FOR YOU
+                  </h1>
+                  <p class="wwd-description w-50">
+                    Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                    Pellentesque vitae ante at elit fringilla ac at purus, Morbi
+                    sed lacus nec risus finibus feugiat et fermentum
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-5">
+              <div class="carousel-container">
+                <div class="carousel">
+                  <div class="slides">
+                    <div class="slide" id="wwdCard">
+                      <img src="Assets/1.png" alt="Image 1" />
+                      <div class="layer">
+                        <div class="icon-img">
+                          <img src="Assets/icon.svg" alt="" />
+                        </div>
+
+                        <h3>WEB DEVELOPMENT</h3>
+                        <p>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Et, quod impedit?
+                        </p>
+                        <a
+                          class="btn"
+                          target="_blank"
+                          href="https://www.fylehq.com/"
+                          >READ MORE
+                          <img class="arrow" src="Assets/arrow.svg" alt=""
+                        /></a>
+                      </div>
+                    </div>
+                    <div class="slide" id="wwdCard1">
+                      <img src="Assets/2.png" alt="Image 2" />
+                      <div class="layer">
+                        <div class="icon-img">
+                          <img src="Assets/icon.svg" alt="" />
+                        </div>
+
+                        <h3>WEB DEVELOPMENT</h3>
+                        <p>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Et, quod impedit?
+                        </p>
+                        <a
+                          class="btn"
+                          target="_blank"
+                          href="https://www.fylehq.com/"
+                          >READ MORE
+                          <img class="arrow" src="Assets/arrow.svg" alt=""
+                        /></a>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <img src="Assets/3.png" alt="Image 3" />
+                      <div class="layer">
+                        <div class="icon-img">
+                          <img src="Assets/icon.svg" alt="" />
+                        </div>
+
+                        <h3>WEB DEVELOPMENT</h3>
+                        <p>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Et, quod impedit?
+                        </p>
+                        <a
+                          class="btn"
+                          target="_blank"
+                          href="https://www.fylehq.com/"
+                          >READ MORE
+                          <img class="arrow" src="Assets/arrow.svg" alt=""
+                        /></a>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <img src="Assets/3.png" alt="Image 3" />
+                      <div class="layer">
+                        <div class="icon-img">
+                          <img src="Assets/icon.svg" alt="" />
+                        </div>
+
+                        <h3>WEB DEVELOPMENT</h3>
+                        <p>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Et, quod impedit?
+                        </p>
+                        <a
+                          class="btn"
+                          target="_blank"
+                          href="https://www.fylehq.com/"
+                          >READ MORE
+                          <img class="arrow" src="Assets/arrow.svg" alt=""
+                        /></a>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <img src="Assets/2.png" alt="Image 2" />
+                      <div class="layer">
+                        <div class="icon-img">
+                          <img src="Assets/icon.svg" alt="" />
+                        </div>
+
+                        <h3>WEB DEVELOPMENT</h3>
+                        <p>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Et, quod impedit?
+                        </p>
+                        <a
+                          class="btn"
+                          target="_blank"
+                          href="https://www.fylehq.com/"
+                          >READ MORE
+                          <img class="arrow" src="Assets/arrow.svg" alt=""
+                        /></a>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <img src="Assets/2.png" alt="Image 2" />
+                      <div class="layer">
+                        <div class="icon-img">
+                          <img src="Assets/icon.svg" alt="" />
+                        </div>
+
+                        <h3>WEB DEVELOPMENT</h3>
+                        <p>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Et, quod impedit?
+                        </p>
+                        <a
+                          class="btn"
+                          target="_blank"
+                          href="https://www.fylehq.com/"
+                          >READ MORE
+                          <img class="arrow" src="Assets/arrow.svg" alt=""
+                        /></a>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <img src="Assets/1.png" alt="Image 1" />
+                      <div class="layer">
+                        <div class="icon-img">
+                          <img src="Assets/icon.svg" alt="" />
+                        </div>
+
+                        <h3>WEB DEVELOPMENT</h3>
+                        <p>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Et, quod impedit?
+                        </p>
+                        <a
+                          class="btn"
+                          target="_blank"
+                          href="https://www.fylehq.com/"
+                          >READ MORE
+                          <img class="arrow" src="Assets/arrow.svg" alt=""
+                        /></a>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <img src="Assets/2.png" alt="Image 2" />
+                      <div class="layer">
+                        <div class="icon-img">
+                          <img src="Assets/icon.svg" alt="" />
+                        </div>
+
+                        <h3>WEB DEVELOPMENT</h3>
+                        <p>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Et, quod impedit?
+                        </p>
+                        <a
+                          class="btn"
+                          target="_blank"
+                          href="https://www.fylehq.com/"
+                          >READ MORE
+                          <img class="arrow" src="Assets/arrow.svg" alt=""
+                        /></a>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <img src="Assets/2.png" alt="Image 2" />
+                      <div class="layer">
+                        <div class="icon-img">
+                          <img src="Assets/icon.svg" alt="" />
+                        </div>
+
+                        <h3>WEB DEVELOPMENT</h3>
+                        <p>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Et, quod impedit?
+                        </p>
+                        <a
+                          class="btn"
+                          target="_blank"
+                          href="https://www.fylehq.com/"
+                          >READ MORE
+                          <img class="arrow" src="Assets/arrow.svg" alt=""
+                        /></a>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <img src="Assets/1.png" alt="Image 1" />
+                      <div class="layer">
+                        <div class="icon-img">
+                          <img src="Assets/icon.svg" alt="" />
+                        </div>
+
+                        <h3>WEB DEVELOPMENT</h3>
+                        <p>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Et, quod impedit?
+                        </p>
+                        <a
+                          class="btn"
+                          target="_blank"
+                          href="https://www.fylehq.com/"
+                          >READ MORE
+                          <img class="arrow" src="Assets/arrow.svg" alt=""
+                        /></a>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <img src="Assets/2.png" alt="Image 2" />
+                      <div class="layer">
+                        <div class="icon-img">
+                          <img src="Assets/icon.svg" alt="" />
+                        </div>
+
+                        <h3>WEB DEVELOPMENT</h3>
+                        <p>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Et, quod impedit?
+                        </p>
+                        <a
+                          class="btn"
+                          target="_blank"
+                          href="https://www.fylehq.com/"
+                          >READ MORE
+                          <img class="arrow" src="Assets/arrow.svg" alt=""
+                        /></a>
+                      </div>
+                    </div>
+                    <div class="slide duplicate">
+                      <img src="Assets/1.png" alt="Image 1" id="wwdImg" />
+                      <div class="layer">
+                        <div class="icon-img">
+                          <img src="Assets/icon.svg" alt="" />
+                        </div>
+
+                        <h3>WEB DEVELOPMENT</h3>
+                        <p>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Et, quod impedit?
+                        </p>
+                        <a
+                          class="btn"
+                          target="_blank"
+                          href="https://www.fylehq.com/"
+                          >READ MORE
+                          <img class="arrow" src="Assets/arrow.svg" alt=""
+                        /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dots-container mt-2">
+                  <div class="dot active" onclick="currentSlide(0)"></div>
+                  <div class="dot black-dot" onclick="currentSlide(1)"></div>
+                  <div class="dot black-dot" onclick="currentSlide(2)"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="OPSection" class="pt-5">
+          <div class="container-sm p-5">
+            <div class="d-flex flex-row justify-content-center">
+              <div>
+                <p class="title-text fs-4 text-center">OUR PROJECT</p>
+                <h1 class="digital-marketing-heading h-size text-center">
+                  WHY WE ARE BEST
+                </h1>
+              </div>
+            </div>
+            <div class="d-flex flex-row justify-content-between mt-5">
+              <div class="op-img">
+                <img
+                  src="/Assets/image.png"
+                  class="OP-img-style"
+                  id="changableImage"
+                />
+              </div>
+              <div class="op-card-desc">
+                <div class="OP-card selected-card p-4" id="project1">
+                  <h1 class="OP-card-heading" id="pheading1">
+                    Genderless Kei – Japan’s Hot
+                  </h1>
+                  <p class="OP-card-description mt-3">
+                    Set to launch on the manufacturer’s new A330neo aircraft in
+                    2017, it’s offering lots of
+                  </p>
+                </div>
+                <div class="OP-card p-4" id="project2">
+                  <h1 class="OP-card-heading" id="pheading2">
+                    Better Strategy & Quality
+                  </h1>
+                  <p class="OP-card-description mt-3">
+                    Set to launch on the manufacturer’s new A330neo aircraft in
+                    2017, it’s offering lots of
+                  </p>
+                </div>
+                <div class="OP-card p-4" id="project3">
+                  <h1 class="OP-card-heading" id="pheading3">
+                    Genderless Kei – Japan’s Hot
+                  </h1>
+                  <p class="OP-card-description mt-3">
+                    Set to launch on the manufacturer’s new A330neo aircraft in
+                    2017, it’s offering lots of
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="EGSection" class="pt-5">
+          <div class="container-sm p-5">
+            <div class="d-flex flex-row justify-content-center">
+              <div>
+                <p class="title-text fs-4 text-center">EXPERTS GROWTHS</p>
+                <h1 class="text-center">OUR COMPANY GROWTH</h1>
+              </div>
+            </div>
+            <div class="d-flex flex-row justify-content-around mt-4">
+              <div
+                class="EG-section-card py-3 text-center d-flex flex-column align-items-center justify-content-around"
+                id="card1"
+              >
+                <img src="Assets/heart.svg" />
+                <div class="number-style">199 +</div>
+                <div class="text-style">Statisfied Customers</div>
+              </div>
+              <div
+                class="EG-section-card py-3 text-center d-flex flex-column align-items-center justify-content-around"
+                id="card2"
+              >
+                <img src="Assets/clock.svg" />
+                <div class="number-style mt-2">1591 +</div>
+                <div class="text-style">Days Of Operation</div>
+              </div>
+              <div
+                class="EG-section-card py-3 text-center d-flex flex-column align-items-center justify-content-around"
+                id="card3"
+              >
+                <img src="Assets/tick.svg" />
+                <div class="number-style mt-2">283 +</div>
+                <div class="text-style">Complete Project</div>
+              </div>
+              <div
+                class="EG-section-card py-3 text-center d-flex flex-column align-items-center justify-content-around"
+                id="card4"
+              >
+                <img src="Assets/trophy.svg" />
+                <div class="number-style mt-2">75 +</div>
+                <div class="text-style">Win Awards</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
